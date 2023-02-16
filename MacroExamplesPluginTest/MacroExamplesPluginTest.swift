@@ -51,3 +51,25 @@ final class MacroExamplesPluginTests: XCTestCase {
     XCTAssertEqual(diagnostic.diagMessage.severity, .error)
   }
 }
+
+extension MacroExamplesPluginTests {
+  func testObjectConforming() {
+	let testMacros: [String: Macro.Type] = [
+	  "objectConformingToProtocol" : ObjectConformingToProtocolMacro.self,
+	]
+	let sf: SourceFileSyntax =
+#"""
+@objc
+protocol ObjcProtocol: NSObjectProtocol {
+
+}
+
+let object = #objectConformingToProtocol(ObjcProtocol.self)
+"""#
+	let context = BasicMacroExpansionContext.init(
+	  sourceFiles: [sf: .init(moduleName: "MyModule", fullFilePath: "test.swift")]
+	)
+	let transformedSF = sf.expand(macros: testMacros, in: context)
+	print(transformedSF.description)
+  }
+}
