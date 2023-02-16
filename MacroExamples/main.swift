@@ -9,6 +9,17 @@ let z = 3
 // "Stringify" macro turns the expression into a string.
 print(#stringify(x + y))
 
+@objc
+protocol ObjcProtocol: NSObjectProtocol {
+
+}
+
+objectConforming(to: ObjcProtocol.self) as? ObjcProtocol
+#objectConformingToProtocol(ObjcProtocol.self)
+
+classConforming(to: ObjcProtocol.self) as? ObjcProtocol.Type
+#classConformingToProtocol(ObjcProtocol.self)
+
 // "AddBlocker" complains about addition operations. We emit a warning
 // so it doesn't block compilation.
 print(#addBlocker(x * y + z))

@@ -12,6 +12,21 @@ import Foundation
 /// #warning("...").
 @freestanding(expression) public macro myWarning(_ message: String) = #externalMacro(module: "MacroExamplesPlugin", type: "WarningMacro")
 
+import Foundation
+
+public func classConforming(to inProtocol: Protocol) -> AnyClass? {
+  nil
+}
+public func objectConforming(to inProtocol: Protocol) -> Any? {
+  nil
+}
+
+@freestanding(expression)
+public macro objectConformingToProtocol<T>(_ protocol: T.Type) -> T? = #externalMacro(module: "MacroExamplesPlugin", type: "ObjectConformingToProtocolMacro")
+
+@freestanding(expression)
+public macro classConformingToProtocol<T>(_ protocol: T.Type) -> T.Type? = #externalMacro(module: "MacroExamplesPlugin", type: "ClassConformingToProtocolMacro")
+
 public enum FontWeight {
   case thin
   case normal

@@ -17,6 +17,8 @@
 		88E54A5229B5475400252D99 /* MetaEnumMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E54A5129B5475400252D99 /* MetaEnumMacro.swift */; };
 		88E54A5429B5520A00252D99 /* MetaEnumMacroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E54A5329B5520A00252D99 /* MetaEnumMacroTests.swift */; };
 		911F5F8829BB5A150081AF9C /* URLMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911F5F8729BB5A150081AF9C /* URLMacro.swift */; };
+		91D7E33B299E0EA4002F0077 /* ObjectConformingToProtocolMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D7E33A299E0EA4002F0077 /* ObjectConformingToProtocolMacro.swift */; };
+		91D7E33D299E0ED3002F0077 /* ClassConformingToProtocolMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D7E33C299E0ED3002F0077 /* ClassConformingToProtocolMacro.swift */; };
 		BD2CDEE9298B24040015A701 /* Diagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2CDEE8298B24040015A701 /* Diagnostics.swift */; };
 		BD2CDEEB298B34730015A701 /* WrapStoredPropertiesMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2CDEEA298B34730015A701 /* WrapStoredPropertiesMacro.swift */; };
 		BD2CDEED298B4A650015A701 /* DictionaryIndirectionMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2CDEEC298B4A650015A701 /* DictionaryIndirectionMacro.swift */; };
@@ -88,6 +90,8 @@
 		88E54A5129B5475400252D99 /* MetaEnumMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaEnumMacro.swift; sourceTree = "<group>"; };
 		88E54A5329B5520A00252D99 /* MetaEnumMacroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaEnumMacroTests.swift; sourceTree = "<group>"; };
 		911F5F8729BB5A150081AF9C /* URLMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLMacro.swift; sourceTree = "<group>"; };
+		91D7E33A299E0EA4002F0077 /* ObjectConformingToProtocolMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectConformingToProtocolMacro.swift; sourceTree = "<group>"; };
+		91D7E33C299E0ED3002F0077 /* ClassConformingToProtocolMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassConformingToProtocolMacro.swift; sourceTree = "<group>"; };
 		BD2CDEE8298B24040015A701 /* Diagnostics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagnostics.swift; sourceTree = "<group>"; };
 		BD2CDEEA298B34730015A701 /* WrapStoredPropertiesMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapStoredPropertiesMacro.swift; sourceTree = "<group>"; };
 		BD2CDEEC298B4A650015A701 /* DictionaryIndirectionMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryIndirectionMacro.swift; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 			children = (
 				911F5F8729BB5A150081AF9C /* URLMacro.swift */,
 				BDF5AFF72947E95C00FA119B /* StringifyMacro.swift */,
+				91D7E33A299E0EA4002F0077 /* ObjectConformingToProtocolMacro.swift */,
+				91D7E33C299E0ED3002F0077 /* ClassConformingToProtocolMacro.swift */,
 				BD841F81294CE1F600DA4D81 /* AddBlocker.swift */,
 				BD752BE4294D3BEC00D00A2E /* WarningMacro.swift */,
 				BD752BE6294D461B00D00A2E /* FontLiteralMacro.swift */,
@@ -415,9 +421,11 @@
 				1D682A96299E3313006F9F78 /* CustomCodable.swift in Sources */,
 				BD2CDEED298B4A650015A701 /* DictionaryIndirectionMacro.swift in Sources */,
 				BD752BE7294D461B00D00A2E /* FontLiteralMacro.swift in Sources */,
+				91D7E33B299E0EA4002F0077 /* ObjectConformingToProtocolMacro.swift in Sources */,
 				BD7324B829989178009C6A08 /* AddCompletionHandlerMacro.swift in Sources */,
 				BD48319329AFF87200F3123A /* OptionSetMacro.swift in Sources */,
 				911F5F8829BB5A150081AF9C /* URLMacro.swift in Sources */,
+				91D7E33D299E0ED3002F0077 /* ClassConformingToProtocolMacro.swift in Sources */,
 				1D682A92299CE4C6006F9F78 /* AddAsyncMacro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
